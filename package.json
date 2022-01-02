@@ -1,0 +1,23 @@
+{
+  "name": "leodegario",
+  "version": "1.0.0",
+  "description": "Application to manage common ledger.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maru3l/leodegario.git"
+  },
+  "author": {
+    "name" : "Marc-Antoine Ruel",
+    "email" : "hello@marcantoineruel.com",
+    "url" : "https://www.marcantoineruel.com/"
+  },
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/maru3l/leodegario/issues"
+  },
+  "homepage": "https://github.com/maru3l/leodegario#readme"
+}
