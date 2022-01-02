@@ -11,13 +11,33 @@
     "url": "git+https://github.com/maru3l/leodegario.git"
   },
   "author": {
-    "name" : "Marc-Antoine Ruel",
-    "email" : "hello@marcantoineruel.com",
-    "url" : "https://www.marcantoineruel.com/"
+    "name": "Marc-Antoine Ruel",
+    "email": "hello@marcantoineruel.com",
+    "url": "https://www.marcantoineruel.com/"
   },
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/maru3l/leodegario/issues"
   },
-  "homepage": "https://github.com/maru3l/leodegario#readme"
+  "homepage": "https://github.com/maru3l/leodegario#readme",
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*",
+      "services/*"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^7.0.4",
+    "turbo": "^1.0.24"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
