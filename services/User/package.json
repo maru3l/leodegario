@@ -1,0 +1,30 @@
+{
+  "name": "@leodegario/user",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node -- ./src/server",
+    "build": "babel src -d dist",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maru3l/leodegario.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maru3l/leodegario/issues"
+  },
+  "homepage": "https://github.com/maru3l/leodegario#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/node": "^7.16.7",
+    "@leodegario/scripts": "^0.0.0",
+    "babel-jest": "^27.4.5",
+    "eslint": "^8.6.0",
+    "faker": "^5.5.3",
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15"
+  }
+}
