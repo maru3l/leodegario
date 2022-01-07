@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec babel-node -- ./src/server",
+    "start": "npm run dev",
     "build": "babel src -d dist",
+    "dev": "nodemon --exec babel-node -r dotenv/config -- ./src/server",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "test": "jest"
   },
@@ -26,5 +27,17 @@
     "faker": "^5.5.3",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ajv": "^8.8.2",
+    "ajv-errors": "^3.0.0",
+    "ajv-formats": "^2.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.16.4",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "mongodb": "^4.2.2",
+    "morgan": "^1.9.1",
+    "winston": "^3.3.3"
   }
 }
